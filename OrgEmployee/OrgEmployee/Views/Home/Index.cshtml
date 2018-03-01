@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<button data-bind="kendoButton: viewEmployeeList">List of employee </button>
+
+@Html.ActionLink("List of enrollments", "Index", "Enrollment")
+
+@section Scripts {
+@Scripts.Render("~/Scripts/ViewModels/Home/IndexVM.js")
+}
